@@ -1,0 +1,225 @@
+nav {
+  background-color: #9ab17a;
+  overflow: hidden;
+  position: relative;
+
+  & a {
+    /* เข้าถึงtag a ใน nav */
+    color: #fff;
+  }
+  & .bars {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    color: #fff;
+  }
+  & .container {
+    max-width: 1170px;
+    margin: 0 auto; /* จัดกึ่งกลาง */
+  }
+  & .nav_con {
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* แกน x */
+    align-items: center; /* แกน y */
+
+    & .logo {
+      display: flex;
+      align-items: center;
+      & a {
+        text-decoration: none; /* ลบเส้นใต้ */
+        font-weight: bold;
+      }
+
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    & ul {
+      display: flex;
+      list-style: none; /* ลบจุดออก */
+      & li {
+        margin: 0 35px;
+        & a {
+          text-decoration: none;
+        }
+      }
+    }
+    /*  & .button {
+      width: 100px;
+      height: 35px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      & a {
+        text-decoration: none;
+        color: #333;
+      }
+    } */
+
+    & button {
+      height: 35px;
+      width: 100px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+
+      & button:hover {
+        box-shadow: 0.5px 0.5px 150px #252525;
+      }
+    }
+
+    & .type1::after {
+      content: "Thank you";
+      height: 35px;
+      width: 100px;
+      background-color: #fbe8ce;
+      color: #9ab17a;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transform: translateY(50px);
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    & .type1::before {
+      content: "Hire Me";
+      height: 35px;
+      width: 100px;
+      background-color: #fff;
+      color: #9ab17a;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transform: translateY(0px) scale(1.2);
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    & .type1:hover::after {
+      transform: translateY(0) scale(1.2);
+    }
+
+    & .type1:hover::before {
+      transform: translateY(-50px) scale(0) rotate(120deg);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_con {
+    flex-direction: column;
+    height: auto !important;
+    margin: 50px 0;
+    align-items: start !important;
+    margin-left: 30px;
+
+    & ul,
+    button {
+      display: none !important;
+    }
+  }
+
+  .mobile_menu {
+    list-style: none;
+    & li {
+      margin: 35px;
+
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  & button {
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-left: 35px;
+    margin-bottom: 20px;
+
+    & button:hover {
+      box-shadow: 0.5px 0.5px 150px #252525;
+    }
+  }
+
+  & .moblie_type1::after {
+    content: "Thank you";
+    height: 35px;
+    width: 100px;
+    background-color: #fbe8ce;
+    color: #9ab17a;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  & .moblie_type1:before {
+    content: "Hire Me";
+    height: 35px;
+    width: 100px;
+    background-color: #fff;
+    color: #9ab17a;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  & .moblie_type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+
+  & .moblie_type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .mobile_menu,
+  .bars,
+  .moblie_button {
+    display: none;
+  }
+}
