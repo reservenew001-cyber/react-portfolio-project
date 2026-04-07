@@ -18,7 +18,7 @@
       & .text_2 {
         font-size: 64px;
         font-weight: bold;
-        color: #9AB17A;
+        color: #9ab17a;
       }
 
       & .text_3 {
@@ -50,9 +50,11 @@
         width: 300px;
         height: 300px;
         border-radius: 100%;
-        background-image: url("src/images/35058E94-7F2F-4AB6-97FA-1986909FABA9.jpg");
+       /*  background-image: url("public/procat-img.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: center; */
+        object-fit: cover;
+        object-position: center;
         margin-right: 120px;
       }
     }

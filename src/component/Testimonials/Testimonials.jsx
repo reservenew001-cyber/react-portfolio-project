@@ -13,7 +13,7 @@ function Testimonials() {
             soluta voluptas.
           </p>
           <img
-            src="src/images/9D316A8D-9934-40A6-9E62-0A535A2A1491.jpg"
+            src="public/johndoe-img.jpg"
             alt=""
           />
           <h4>John Doe</h4>
@@ -26,7 +26,7 @@ function Testimonials() {
             soluta voluptas.
           </p>
           <img
-            src="src/images/251294A2-2521-4A88-952F-C3176BA9E01C.jpg"
+            src="public/jackdoe-img.jpg"
             alt=""
           />
           <h4>Jack Doe</h4>
@@ -39,7 +39,7 @@ function Testimonials() {
             soluta voluptas.
           </p>
           <img
-            src="src/images/C6C0F334-1A8D-4631-8A7C-6EE6ECDA6783.jpg"
+            src="public/joedoe-img.jpg"
             alt=""
           />
           <h4>Joe Doe</h4>

@@ -51,7 +51,13 @@ function Hero() {
             </ul>
           </div>
           <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-            <div className={style.hero_img}></div>
+            <div>
+              <img
+                className={style.hero_img}
+                src="public/procat-img.jpg"
+                alt=""
+              />
+            </div>
           </Tilt>
         </div>
       </div>
