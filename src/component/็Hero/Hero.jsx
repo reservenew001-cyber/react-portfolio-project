@@ -54,7 +54,7 @@ function Hero() {
             <div>
               <img
                 className={style.hero_img}
-                src="public/procat-img.jpg"
+                src="/procat-img.jpg"
                 alt=""
               />
             </div>
