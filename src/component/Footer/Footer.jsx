@@ -4,7 +4,7 @@ import style from "./Footer.module.css";
 function Footer() {
   return (
     <footer>
-      <p>Copyright © 2023. All Rights Reserved.</p>
+      <p>Copyright © 2026. All Rights Reserved.</p>
     </footer>
   );
 }
